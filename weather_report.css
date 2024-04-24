@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@media (max-width:900px),
+(min-width:900px) {
+    .bg-container {
+        background-color: #b96fa1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .top-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 15px;
+    }
+
+    .place-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .place {
+        color: #ffffff;
+        font-family: "Roboto";
+        font-size: 25px;
+    }
+
+    .condition {
+        color: #ffffff;
+        font-family: "Roboto";
+        font-size: 20px;
+    }
+
+    .humidity {
+        color: #ffffff;
+        font-family: "Roboto";
+        font-size: 16px;
+    }
+
+    .place-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .bottom-container {
+        background-color: #ffffff20;
+        padding: 10px;
+        margin: 7px;
+        border-radius: 10px;
+    }
+
+    .weather-desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    .date {
+        font-family: "Roboto";
+        font-size: 10px;
+    }
+
+    .weather-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .weather-range {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .max {
+        font-family: "Roboto";
+        font-weight: bold;
+    }
+
+    .min {
+        font-family: "Roboto";
+    }
+
+    .weather {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .hr {
+        height: 1px;
+        color: #ffffff;
+    }
+}
+
+@media (min-width:900px) {
+    .bottom-container {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        padding: 20px;
+        margin: 7px;
+        border-radius: 10px;
+    }
+
+    .weather-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px;
+        color: #ffffff;
+    }
+
+    .weather-range {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    hr {
+        display: none;
+    }
+}
